@@ -8,8 +8,7 @@
 	push bx
 	mov ah, 0x0e
 	mov al, %1;		Character to print
-	mov bh, 0x0a
-	mov bl, 0x0A;		Color if the cheracter
+	mov bx, %2;		Color of the cheracter
 	int 0x10
 
 	pop bx
