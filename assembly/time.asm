@@ -1,3 +1,9 @@
+; TIME.ASM: time related apis
+; (https://github.com/bitwaree/mbrlock)
+; Copyright (c) 2024 bitware.
+
+
+
 ;TYPE: FUNCTION
 ; makes a delay
 ;Usage: 
@@ -15,7 +21,7 @@ inner_loop:
     dec cx               ; Decrement outer loop counter
     jnz outer_loop       ; Repeat until cx is zero
     ret                  ; Return from delay function
-; ------- FUNC stop -------
+; ------- FUNC end -------
 
 
 
@@ -30,10 +36,12 @@ inner_loop:
 sleep_microsec:
 
     mov cx, 0          ; Set CX to 0 for the high word (not used)
-    mov dx, dx         ; Set DX to microseconds (2 seconds)
+    ;mov dx, dx         ; Set DX to microseconds (2 seconds)
     mov ah, 86h        ; Function to wait
     int 0x15	; Call BIOS interrupt
-; ------- FUNC stop -------
+	
+	ret
+; ------- FUNC end -------
 
 
 

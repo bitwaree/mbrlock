@@ -1,3 +1,8 @@
+; MMGR.ASM: memory management stuffs
+; (https://github.com/bitwaree/mbrlock)
+; Copyright (c) 2024 bitware.
+
+
 ; TYPE: NASM MACRO
 ;loads a sector at the specified address
 ;Usage:

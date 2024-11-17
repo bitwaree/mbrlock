@@ -1,4 +1,7 @@
 ; SPEAKER.ASM: Code snippets for speaker management
+; (https://github.com/bitwaree/mbrlock)
+; Copyright (c) 2024 bitware.
+
 
 
 ;TYPE: FUNCTION
@@ -13,7 +16,7 @@ initspk:
 	out 43h, al
 	
 	ret
-; ------- FUNC start -------
+; ------- FUNC end -------
 
 
 
@@ -44,7 +47,7 @@ beepon:
     out dx, al       ; Send high byte
 	
 	ret
-; ------- FUNC start -------
+; ------- FUNC end -------
 
 
 ;TYPE: FUNCTION
@@ -62,4 +65,4 @@ beepoff:
     out dx, al
 
 	ret
-; ------- FUNC start -------
+; ------- FUNC end -------

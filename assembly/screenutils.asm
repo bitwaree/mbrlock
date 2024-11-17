@@ -1,4 +1,9 @@
-; ------- DEF start -------
+; SCREENUTILS.ASM: BIOS screen utils
+; (https://github.com/bitwaree/mbrlock)
+; Copyright (c) 2024 bitware.
+
+
+
 
 ; TYPE: NASM MACRO
 ; Switch to text mode and clean the screen
